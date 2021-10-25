@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.h
-//  Study
+//  Test
 //
 //  Created by 전다희 on 2021/10/25.
 //

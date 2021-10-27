@@ -13,7 +13,8 @@
 
 @implementation AppDelegate
 
-
+// 인스턴스 메소드 앞에 '-'가 붙는다
+// 클래스 메소드, 스태틱의 경우 '+'
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
@@ -22,7 +23,7 @@
 
 #pragma mark - UISceneSession lifecycle
 
-
+// 함수 인자는 :로 구분하며, 두번째 파라미터부터는 파라미터 레이블(이름)을 반드시 지정해야 한다
 - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
     // Called when a new scene session is being created.
     // Use this method to select a configuration to create the new scene with.

@@ -28,6 +28,7 @@ int main(int argc, char * argv[]) {
         // NSLog는 출력일자 및 시간, 파일명[라인수] 를 함께 리턴한다
         NSLog(@"Bool value %@", boolValue ? @"YES" : @"NO");
         
+        MyClass * myObj1 = [MyClass new];
         MyClass *myObj = [[MyClass alloc]init]; // 인스턴스 생성 및 초기화
         // alloc은 클래스 메소드(=팩토리 메소드), 메모리 할당
         // init은 인스턴스 메소드, 초기화

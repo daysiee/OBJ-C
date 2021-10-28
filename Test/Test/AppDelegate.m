@@ -85,12 +85,25 @@
 
 @end
 
+
+@interface MyClass ()
+
+@property (nonatomic, assign) NSInteger nTest;
+
+@end
+
 // 클래스 구현
 @implementation MyClass
 
 - (int) ddd: (int) x // 정의
 {
     return (x*2);
+}
+
+-(NSInteger) addTest :(NSInteger)nAdd
+{
+    self.nTest += nAdd;
+    return  self.nTest;
 }
 
 @end

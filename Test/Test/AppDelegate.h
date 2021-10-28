@@ -26,6 +26,8 @@
     // 여기에 인스턴스 변수 선언 (데이터는 클래스 안에 저장: 캡슐화)
 }
 
+
 -(int) ddd: (int)x; // 선언
+-(NSInteger) addTest :(NSInteger)nAdd;
 
 @end

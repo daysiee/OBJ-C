@@ -53,7 +53,8 @@
     // Use this method to save data, release shared resources, and store enough scene-specific state information
     // to restore the scene back to its current state.
 
-    // Save changes in the application's managed object context when the application transitions to the background.
+    // Save changes in the application's managed object context when th#e application transitions to the background.
+
     [(AppDelegate *)UIApplication.sharedApplication.delegate saveContext];
 }
 

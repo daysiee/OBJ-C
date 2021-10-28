@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DD80B72272B67CE00121C9A /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD80B6D272B67C000121C9A /* TestClass.m */; };
+		7DD80B75272B67E600121C9A /* TestClass2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD80B74272B67E600121C9A /* TestClass2.swift */; };
 		E240EE002726ED780081E3F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E240EDFF2726ED780081E3F2 /* AppDelegate.m */; };
 		E240EE032726ED780081E3F2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E240EE022726ED780081E3F2 /* SceneDelegate.m */; };
 		E240EE062726ED780081E3F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E240EE052726ED780081E3F2 /* ViewController.m */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7DD80B6C272B67C000121C9A /* TestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		7DD80B6D272B67C000121C9A /* TestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		7DD80B73272B67E500121C9A /* Test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Bridging-Header.h"; sourceTree = "<group>"; };
+		7DD80B74272B67E600121C9A /* TestClass2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClass2.swift; sourceTree = "<group>"; };
 		E240EDFB2726ED780081E3F2 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E240EDFE2726ED780081E3F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E240EDFF2726ED780081E3F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +81,10 @@
 				E240EE122726ED7D0081E3F2 /* Info.plist */,
 				E240EE132726ED7D0081E3F2 /* main.m */,
 				E240EE0A2726ED780081E3F2 /* Test.xcdatamodeld */,
+				7DD80B6C272B67C000121C9A /* TestClass.h */,
+				7DD80B6D272B67C000121C9A /* TestClass.m */,
+				7DD80B74272B67E600121C9A /* TestClass2.swift */,
+				7DD80B73272B67E500121C9A /* Test-Bridging-Header.h */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -110,6 +120,7 @@
 				TargetAttributes = {
 					E240EDFA2726ED780081E3F2 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -149,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD80B75272B67E600121C9A /* TestClass2.swift in Sources */,
+				7DD80B72272B67CE00121C9A /* TestClass.m in Sources */,
 				E240EE142726ED7D0081E3F2 /* main.m in Sources */,
 				E240EE062726ED780081E3F2 /* ViewController.m in Sources */,
 				E240EE0C2726ED780081E3F2 /* Test.xcdatamodeld in Sources */,
@@ -296,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JHQYS3X386;
@@ -314,6 +328,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hee.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Test/Test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -323,6 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JHQYS3X386;
@@ -341,6 +359,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hee.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Test/Test-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -84,3 +84,13 @@
 }
 
 @end
+
+// 클래스 구현
+@implementation MyClass
+
+- (int) ddd: (int) x // 정의
+{
+    return (x*2);
+}
+
+@end

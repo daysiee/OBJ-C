@@ -7,8 +7,15 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+/*
+    [클래스 확장]
+    - m파일에 있는 @interface ~ @end는 h파일에 있는 것과는 다르다!
+    - 괄호 안에는 보통 카테고리 명을 쓰며, 빈 괄호는 카테고리의 특별한 경우로 class extension이라 한다
+    - 자동으로 생성되나, 필요 없는 경우 생략 가능하다
+*/
 
+@interface AppDelegate ()
+// 클래스 내부에서만 사용하는 private 메소드를 선언한다
 @end
 
 @implementation AppDelegate

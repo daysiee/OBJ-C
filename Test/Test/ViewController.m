@@ -17,6 +17,77 @@
 
 @end
 
+/*
+ 
+ [프로퍼티]
+ 프로퍼티의 수식어는 세터 여부/ 생존기간/멀티스레드 여부에 따라 달라진다
+ @property (strong, nonatomic) IBOutlet UITextField *tempText; // 가장 많이 사용
+
+ *세터
+ 기본적으론 (readwrite) 디폴트
+
+ *생존기간
+ 기본적으로 (strong) 디폴트
+ strong
+ - 객체에 소유권
+ - retain
+ - 보통 클래스의 인스턴스에 사용
+ weak
+ - 소유권 없음, 대상 객체가 해제되면 nil 됨
+ - 주소만 참조
+ - assign
+ - 기본 자료형의 경우 적합
+
+ *멀티스레드 고려
+ 기본적으로 (atomic) 디폴트
+ atomic
+ - 프로퍼티 접근 시 lock과 unlock 반복
+ - 멀티스레드 환경에서 공유되는 리소스에 사용
+ nonatomic
+ - 일반적인 환경으로 빠름
+
+
+ [소스 줄이기]
+ *Obj-c의 getter는 보통 접두사 get을 생략한다
+ : - (int) age;
+
+ *property, synthesize 구문으로 대체
+ : 자동으로 getter/setter 생성
+ - (void) setAge: (int)a;
+ - (int) age;                             =>      @property int age;
+  - (void) setAge: (int)a
+ {
+     age = a;
+ }
+ - (int) age
+ {
+     return age;
+ }                                             =>       @synthesize age;
+   
+ 이 때, property 구문에서 이미 자료형을 선언했으므로
+ synthesize 구문에서는 따로 적어주지 않는다.
+
+ *property, synthesize 구문 장점
+ 1)dot notation
+ : poperty/synthesize 구문 사용 시 dot notation을 사용할 수 있다
+
+ Dog * happy = [[Dog alloc] init];
+ happy.age = 5;  // [happy setAge:5 ]
+
+ 2)인스턴스 변수 선언 생략 가능
+ : @property int age; 하나로 대체 가능
+
+ 3)synthesize 구문 생략 가능
+ : 최신 obj-c에서는 디폴트로 선언되기 때문
+ => 단, 이 경우 클래수 내부(.m)에서 프로퍼티 접근 시 속성명 앞에 _를 꼭 붙여야 한다!
+
+ - (void) show
+ {
+     NSLog(@“%d”, _age);
+ }
+ 
+ */
+
 @implementation ViewController
 
 - (void)viewDidLoad {
